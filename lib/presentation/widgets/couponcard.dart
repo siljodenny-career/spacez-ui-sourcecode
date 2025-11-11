@@ -24,7 +24,7 @@ class _CouponcardState extends State<Couponcard> {
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: SizedBox(
-        width: MediaQuery.of(context).size.width,
+        width: double.infinity,
 
         child: Row(
           children: [
