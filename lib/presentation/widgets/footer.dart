@@ -7,7 +7,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      width: MediaQuery.of(context).size.width,
 
       child: Column(
         children: [
@@ -128,7 +128,7 @@ class Footer extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
                       vertical: 8.0,
-                      horizontal: 16.0,
+                      horizontal: 10.0,
                     ),
                     child: Text(
                       "Reserve",

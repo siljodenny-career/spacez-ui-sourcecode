@@ -1,18 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spacez/presentation/bloc/coupon_request_bloc/coupon_request_bloc.dart';
-import 'package:spacez/presentation/widgets/couponcard.dart';
 
-class CouponsListWrapper extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return BlocProvider(
-      create: (context) => CouponRequestBloc(),
-      child: CouponsList(),
-    );
-  }
-}
+import 'package:spacez/presentation/widgets/couponcard.dart';
 
 class CouponsList extends StatelessWidget {
   const CouponsList({super.key});

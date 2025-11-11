@@ -19,12 +19,11 @@ class Couponcard extends StatefulWidget {
 class _CouponcardState extends State<Couponcard> {
   bool appliedButton = false;
 
-  
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20),
-      child: Container(
+      child: SizedBox(
         width: double.infinity,
 
         child: Row(
@@ -88,15 +87,17 @@ class _CouponcardState extends State<Couponcard> {
                             ),
                             Row(
                               children: [
-                                Image.asset(
-                                  "assets/images/coupon-bold.png",
-                                  width: 18,
-                                ),
+                                appliedButton
+                                    ? Icon(Icons.check_circle,size: 18,)
+                                    : Image.asset(
+                                        "assets/images/shoppingmode.png",
+                                        width: 18,
+                                      ),
                                 SizedBox(width: 3),
                                 InkWell(
                                   onTap: () {
                                     setState(() {
-                                      appliedButton =! appliedButton;
+                                      appliedButton = !appliedButton;
                                     });
                                   },
                                   child: appliedButton
