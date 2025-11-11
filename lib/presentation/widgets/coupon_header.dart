@@ -13,12 +13,20 @@ class CouponHeader extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            
-            color: Color.fromARGB(255, 226, 228, 226), // Shadow color
-            spreadRadius: 0, // How wide the shadow spreads
-            blurRadius: 2, // How soft the shadow looks
-            offset: Offset(0, 3), // 👈 X=0 (no side), Y=4 (shadow below)
-          ),
+        color: const Color.fromRGBO(75, 78, 75, 0.01),
+        offset: const Offset(0, 17), // x=0, y=17 (bottom direction)
+        blurRadius: 10,
+      ),
+      BoxShadow(
+        color: const Color.fromRGBO(75, 78, 75, 0.05),
+        offset: const Offset(0, 7),
+        blurRadius: 7,
+      ),
+      BoxShadow(
+        color: const Color.fromRGBO(75, 78, 75, 0.09),
+        offset: const Offset(0, 2),
+        blurRadius: 4,
+      ),
         ],
       ),
       child: SizedBox(

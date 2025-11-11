@@ -45,68 +45,71 @@ class Footer extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "₹19,000",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: "price",
-                                decoration: TextDecoration.lineThrough,
-                                color: Color(0XFFB82B14),
+                Expanded(
+                  
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "₹19,000",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: "price",
+                                  decoration: TextDecoration.lineThrough,
+                                  color: Color(0XFFB82B14),
+                                ),
                               ),
-                            ),
-                            SizedBox(width: 5),
-                            Text(
-                              "₹16,000",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "price",
-                                color: Color(0XFF4B4E4B),
+                              SizedBox(width: 5),
+                              Text(
+                                "₹16,000",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: "price",
+                                  color: Color(0XFF4B4E4B),
+                                ),
                               ),
-                            ),
-                            SizedBox(width: 5),
-                            Text(
-                              "for 2 nights",
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "price",
-                                color: Color(0XFF7D817D),
+                              SizedBox(width: 5),
+                              Text(
+                                "for 2 nights",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700,
+                                  fontFamily: "price",
+                                  color: Color(0XFF7D817D),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              "24 Apr - 26 Apr | 8 guests",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w300,
-                                fontFamily: "semibold",
-                                color: Color(0XFF4B4E4B),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "24 Apr - 26 Apr | 8 guests",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "semibold",
+                                  color: Color(0XFF4B4E4B),
+                                ),
                               ),
-                            ),
-                            SizedBox(width: 5),
-                            Image.asset(
-                              "assets/images/edit_square.png",
-                              width: 11,
-                              color: Color(0XFF646864),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
+                              SizedBox(width: 5),
+                              Image.asset(
+                                "assets/images/edit_square.png",
+                                width: 11,
+                                color: Color(0XFF646864),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -117,27 +120,21 @@ class Footer extends StatelessWidget {
                       ),
                     );
                   },
-
+                
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0XFFC16B3E),
-
+                
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusGeometry.circular(2),
                     ),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8.0,
-                      horizontal: 10.0,
-                    ),
-                    child: Text(
-                      "Reserve",
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w300,
-                        fontFamily: "semibold",
-                        color: Color(0XFFFFFFFF),
-                      ),
+                  child: Text(
+                    "Reserve",
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w300,
+                      fontFamily: "semibold",
+                      color: Color(0XFFFFFFFF),
                     ),
                   ),
                 ),

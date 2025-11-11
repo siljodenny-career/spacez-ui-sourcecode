@@ -20,6 +20,7 @@ class CouponsScreen extends StatelessWidget {
               CouponHeader(),
               SizedBox(height: 10),
               CouponsList(),
+              SizedBox(height: 10),
               Footer(),
             ],
           ),

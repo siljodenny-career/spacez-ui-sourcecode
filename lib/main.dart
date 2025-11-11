@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'SpaceZUI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white
       ),
       home: Homescreen(),
     );
