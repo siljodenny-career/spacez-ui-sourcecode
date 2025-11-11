@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SpaceZUI',
+      
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        
+        scaffoldBackgroundColor: Colors.white
       ),
       home: Homescreen(),
     );
